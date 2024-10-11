@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NoteTaker.MainPage">
+    <VerticalStackLayout >
+        <Label
+    Text="Welcome to NoteTaker!"
+    FontSize="50"
+            HorizontalOptions="Center"
+    SemanticProperties.HeadingLevel="Level1" />
+        <HorizontalStackLayout Padding="100" Spacing="40" HorizontalOptions="Center">
+            
+            <Button x:Name="NewNoteB" Text="New Note" Clicked="NewNote"/>
+            <Button x:Name="OpenNoteB" Text="Open Note" Clicked="OpenNote"/>
+            <Entry x:Name="EnterText" IsVisible="False" Completed="EnterDone"  />
+        </HorizontalStackLayout>
+        
+            <Label x:Name="Anounce"   Text="Please open a note, or create one." FontSize="30" Padding="30" HorizontalOptions="Center"/>
+            <Entry x:Name="BigEnter" IsVisible="False" Completed="BigEnterDone"  VerticalTextAlignment="Start" />
+        </VerticalStackLayout>
+
+ 
+
+</ContentPage>
