@@ -4,7 +4,7 @@
              x:Class="NoteTaker.MainPage">
 
     <ScrollView>
-        <VerticalStackLayout Padding="20" Spacing="20" HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
+        <VerticalStackLayout Padding="20" Spacing="20" HorizontalOptions="Center" >
 
             <Label
                 Text="Welcome to NoteTaker!"
@@ -13,12 +13,12 @@
                 SemanticProperties.HeadingLevel="Level1" 
                 LineBreakMode="WordWrap" />
 
-            <HorizontalStackLayout Padding="20" Spacing="20" HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
+            <HorizontalStackLayout Padding="20" Spacing="20" HorizontalOptions="Center">
                 <Button x:Name="NewNoteB" Text="New Note" Clicked="NewNote" 
                         FontSize="{OnPlatform Default='Medium', WinUI='Large'}"/>
                 <Button x:Name="OpenNoteB" Text="Open Note" Clicked="OpenNote" 
                         FontSize="{OnPlatform Default='Medium', WinUI='Large'}"/>
-                <Button x:Name="ViewAllN" Text="View all notes" Clicked="VallN" 
+                <Button x:Name="ViewAllN" Text="View all note names" Clicked="VallN" 
                         FontSize="{OnPlatform Default='Medium', WinUI='Large'}"/>
             </HorizontalStackLayout>
 
