@@ -2,23 +2,39 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="NoteTaker.MainPage">
-    <VerticalStackLayout >
-        <Label
-    Text="Welcome to NoteTaker!"
-    FontSize="50"
-            HorizontalOptions="Center"
-    SemanticProperties.HeadingLevel="Level1" />
-        <HorizontalStackLayout Padding="100" Spacing="40" HorizontalOptions="Center">
-            
-            <Button x:Name="NewNoteB" Text="New Note" Clicked="NewNote"/>
-            <Button x:Name="OpenNoteB" Text="Open Note" Clicked="OpenNote"/>
-            <Entry x:Name="EnterText" IsVisible="False" Completed="EnterDone"  />
-        </HorizontalStackLayout>
-        
-            <Label x:Name="Anounce"   Text="Please open a note, or create one." FontSize="30" Padding="30" HorizontalOptions="Center"/>
-            <Entry x:Name="BigEnter" IsVisible="False" Completed="BigEnterDone"  VerticalTextAlignment="Start" />
-        </VerticalStackLayout>
 
- 
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="20" HorizontalOptions="Center" >
+
+            <Label
+                Text="Welcome to NoteTaker!"
+                FontSize="{OnPlatform Default='40', WinUI='50'}"
+                HorizontalOptions="Center"
+                SemanticProperties.HeadingLevel="Level1" 
+                LineBreakMode="WordWrap" />
+
+            <HorizontalStackLayout Padding="20" Spacing="20" HorizontalOptions="Center">
+                <Button x:Name="NewNoteB" Text="New Note" Clicked="NewNote" 
+                        FontSize="{OnPlatform Default='Medium', WinUI='Large'}"/>
+                <Button x:Name="OpenNoteB" Text="Open Note" Clicked="OpenNote" 
+                        FontSize="{OnPlatform Default='Medium', WinUI='Large'}"/>
+                <Button x:Name="ViewAllN" Text="View all note names" Clicked="VallN" 
+                        FontSize="{OnPlatform Default='Medium', WinUI='Large'}"/>
+            </HorizontalStackLayout>
+
+            <Entry x:Name="EnterText" IsVisible="False" Completed="EnterDone" 
+                   Placeholder="Enter text here..." />
+
+            <Label x:Name="Anounce" Text="Please open a note, or create one." 
+                   FontSize="{OnPlatform Default='20', WinUI='30'}" 
+                   Padding="20" HorizontalOptions="Center" LineBreakMode="WordWrap" />
+
+            <Entry x:Name="BigEnter" IsVisible="False" Completed="BigEnterDone" 
+                   Placeholder="Type your big note here..." 
+                   VerticalTextAlignment="Start" />
+
+        </VerticalStackLayout>
+    </ScrollView>
 
 </ContentPage>
+
