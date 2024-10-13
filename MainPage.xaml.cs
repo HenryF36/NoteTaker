@@ -57,6 +57,10 @@
             BigEnter.Text = Preferences.Get("L","None");
             
         }
+        private void DelN(object sender, EventArgs e)
+        {
+
+        }
     }
 
 

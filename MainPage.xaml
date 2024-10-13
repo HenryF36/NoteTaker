@@ -20,6 +20,8 @@
                         FontSize="{OnPlatform Default='Medium', WinUI='Large'}"/>
                 <Button x:Name="ViewAllN" Text="View all notes" Clicked="VallN" 
                         FontSize="{OnPlatform Default='Medium', WinUI='Large'}"/>
+                <Button x:Name="DelNote" Text="Delete a note" Clicked="DelN" 
+        FontSize="{OnPlatform Default='Medium', WinUI='Large'}"/>
             </HorizontalStackLayout>
 
             <Entry x:Name="EnterText" IsVisible="False" Completed="EnterDone" 
