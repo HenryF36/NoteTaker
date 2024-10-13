@@ -23,7 +23,7 @@
             BigEnter.IsReadOnly = false;
             BigEnter.Text = Preferences.Get(EnterText.Text.ToLower(), "");
             BigEnter.Placeholder = $"Enter Contents of {Name}";
-            Preferences.Set("L", Preferences.Get("L","") + EnterText.Text.ToLower());
+            Preferences.Set("L", $"{Preferences.Get("L","")}, {EnterText.Text.ToLower()}");
 
         }
         private void BigEnterDone(object sender, EventArgs e)
