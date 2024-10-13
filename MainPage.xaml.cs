@@ -1,6 +1,4 @@
-﻿//using Microsoft.Windows.Widgets.Notifications;
-
-namespace NoteTaker
+﻿namespace NoteTaker
 {
     public partial class MainPage : ContentPage
     {
@@ -20,7 +18,6 @@ namespace NoteTaker
         private void EnterDone(object sender, EventArgs e)
         {
             Name = EnterText.Text;
-            if (Name == "L") { Anounce.Text = "L is a reserved word, do not attempt to save note."; return; }
             EnterText.IsVisible = false;
             BigEnter.IsVisible = true;
             BigEnter.IsReadOnly = false;
@@ -56,7 +53,7 @@ namespace NoteTaker
         {
             BigEnter.IsVisible = true;
             BigEnter.IsReadOnly= true;
-            Anounce.Text = "Viewing all note names";
+            Anounce.Text = "Viewing all notes";
             BigEnter.Text = Preferences.Get("L","None");
             
         }
