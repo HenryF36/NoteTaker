@@ -15,19 +15,19 @@
                 LineBreakMode="WordWrap" />
 
             <!-- Buttons for Note Actions -->
-            <Grid ColumnDefinitions="*, *, *, *" Padding="10" HorizontalOptions="CenterAndExpand">
+            <Grid ColumnDefinitions="*, *, *, *" ColumnSpacing="{OnIdiom Phone='10', Tablet='10', Desktop='30'}" HorizontalOptions="CenterAndExpand">
                 <Button Grid.Column="0" x:Name="NewNoteB" Text="New Note" Clicked="NewNote"
                         FontSize="{OnIdiom Phone='12', Tablet='Medium', Desktop='Large'}"
-                        Padding="{OnIdiom Phone='10', Tablet='10', Desktop='10'}"/>
+                       />
                 <Button Grid.Column="1" x:Name="OpenNoteB" Text="Open Note" Clicked="OpenNote"
                         FontSize="{OnIdiom Phone='12', Tablet='Medium', Desktop='Large'}"
-                        Padding="{OnIdiom Phone='10', Tablet='10', Desktop='10'}"/>
+                        />
                 <Button Grid.Column="2" x:Name="ViewAllN" Text="View all notes" Clicked="VallN"
-                        FontSize="{OnIdiom Phone='12', Tablet='Medium', Desktop='Large'}"
-                        Padding="{OnIdiom Phone='10', Tablet='10', Desktop='10'}"/>
-                <Button Grid.Column="3" x:Name="DelNote" Text="Delete all notes" Clicked="DelN"
                         FontSize="{OnIdiom Phone='10', Tablet='Medium', Desktop='Large'}"
-                        Padding="{OnIdiom Phone='10', Tablet='10', Desktop='10'}"/>
+                        />
+                <Button Grid.Column="3" x:Name="DelNote" Text="Delete all notes" Clicked="DelN"
+                        FontSize="{OnIdiom Phone='9', Tablet='Medium', Desktop='Large'}"
+                        />
             </Grid>
 
             <!-- Entry for note input -->
