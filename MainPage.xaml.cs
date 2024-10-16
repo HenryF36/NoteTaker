@@ -6,6 +6,7 @@
         public MainPage()
         {
             InitializeComponent();
+            
         }
         private void NewNote(object sender, EventArgs e)
         {
@@ -59,7 +60,8 @@
         }
         private void DelN(object sender, EventArgs e)
         {
-
+            Preferences.Clear();
+            Anounce.Text = "Cleared all notes";
         }
     }
 

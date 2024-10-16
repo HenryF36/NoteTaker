@@ -6,37 +6,46 @@
     <ScrollView>
         <VerticalStackLayout Padding="20" Spacing="20" HorizontalOptions="CenterAndExpand">
 
+            <!-- Welcome Label -->
             <Label
                 Text="Welcome to NoteTaker!"
-                FontSize="{OnPlatform Default='40', WinUI='50'}"
+                FontSize="{OnPlatform Default='40', WinUI='50', iOS='35', Android='30'}"
                 HorizontalOptions="Center"
-                SemanticProperties.HeadingLevel="Level1" 
+                SemanticProperties.HeadingLevel="Level1"
                 LineBreakMode="WordWrap" />
 
-            <HorizontalStackLayout Padding="20" Spacing="20" HorizontalOptions="Center">
-                <Button x:Name="NewNoteB" Text="New Note" Clicked="NewNote" 
-                        FontSize="{OnPlatform Default='Medium', WinUI='Large'}"/>
-                <Button x:Name="OpenNoteB" Text="Open Note" Clicked="OpenNote" 
-                        FontSize="{OnPlatform Default='Medium', WinUI='Large'}"/>
-                <Button x:Name="ViewAllN" Text="View all notes" Clicked="VallN" 
-                        FontSize="{OnPlatform Default='Medium', WinUI='Large'}"/>
-                <Button x:Name="DelNote" Text="Delete a note" Clicked="DelN" 
-        FontSize="{OnPlatform Default='Medium', WinUI='Large'}"/>
-            </HorizontalStackLayout>
+            <!-- Buttons for Note Actions -->
+            <Grid ColumnDefinitions="*, *, *, *" Padding="10" HorizontalOptions="CenterAndExpand">
+                <Button Grid.Column="0" x:Name="NewNoteB" Text="New Note" Clicked="NewNote"
+                        FontSize="{OnIdiom Phone='12', Tablet='Medium', Desktop='Large'}"
+                        Padding="{OnIdiom Phone='10', Tablet='10', Desktop='10'}"/>
+                <Button Grid.Column="1" x:Name="OpenNoteB" Text="Open Note" Clicked="OpenNote"
+                        FontSize="{OnIdiom Phone='12', Tablet='Medium', Desktop='Large'}"
+                        Padding="{OnIdiom Phone='10', Tablet='10', Desktop='10'}"/>
+                <Button Grid.Column="2" x:Name="ViewAllN" Text="View all notes" Clicked="VallN"
+                        FontSize="{OnIdiom Phone='12', Tablet='Medium', Desktop='Large'}"
+                        Padding="{OnIdiom Phone='10', Tablet='10', Desktop='10'}"/>
+                <Button Grid.Column="3" x:Name="DelNote" Text="Delete all notes" Clicked="DelN"
+                        FontSize="{OnIdiom Phone='10', Tablet='Medium', Desktop='Large'}"
+                        Padding="{OnIdiom Phone='10', Tablet='10', Desktop='10'}"/>
+            </Grid>
 
+            <!-- Entry for note input -->
             <Entry x:Name="EnterText" IsVisible="False" Completed="EnterDone" 
-                   Placeholder="Enter text here..." />
+                   Placeholder="Enter text here..."
+                   FontSize="{OnPlatform Default='20', WinUI='25'}" />
 
-            <Label x:Name="Anounce" Text="Please open a note, or create one." 
-                   FontSize="{OnPlatform Default='20', WinUI='30'}" 
+            <!-- Announcement Label -->
+            <Label x:Name="Anounce" Text="Please open a note, or create one."
+                   FontSize="{OnPlatform Default='20', WinUI='30', iOS='18', Android='18'}"
                    Padding="20" HorizontalOptions="Center" LineBreakMode="WordWrap" />
 
+            <!-- Big entry for larger notes -->
             <Entry x:Name="BigEnter" IsVisible="False" Completed="BigEnterDone" 
-                   Placeholder="Type your big note here..." 
-                   VerticalTextAlignment="Start" />
+                   Placeholder="Type your big note here..."
+                   VerticalTextAlignment="Start" 
+                   FontSize="{OnPlatform Default='18', WinUI='22', iOS='16', Android='16'}" />
         </VerticalStackLayout>
     </ScrollView>
 
 </ContentPage>
-
-
