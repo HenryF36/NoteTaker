@@ -3,6 +3,7 @@
     public partial class MainPage : ContentPage
     {
         public string Name;
+        public bool O = false;
         public MainPage()
         {
             InitializeComponent();
@@ -14,6 +15,7 @@
             EnterText.Text = "";
             EnterText.Placeholder = "Enter Note Name";
             EnterText.Keyboard = Keyboard.Text;
+            O = false;
 
         }
         private void EnterDone(object sender, EventArgs e)
@@ -24,7 +26,10 @@
             BigEnter.IsReadOnly = false;
             BigEnter.Text = Preferences.Get(EnterText.Text.ToLower(), "");
             BigEnter.Placeholder = $"Enter Contents of {Name}";
-            Preferences.Set("L", $"{Preferences.Get("L","")} {EnterText.Text.ToLower()},");
+            if (O)
+            {
+                Preferences.Set("L", $"{Preferences.Get("L", "")} {EnterText.Text.ToLower()},");
+            } 
 
         }
         private void BigEnterDone(object sender, EventArgs e)
@@ -49,6 +54,7 @@
             EnterText.Text = "";
             EnterText.Placeholder = "Enter Note Name";
             EnterText.Keyboard = Keyboard.Text;
+            O = true;
         }
         private void VallN(object sender, EventArgs e)
         {
