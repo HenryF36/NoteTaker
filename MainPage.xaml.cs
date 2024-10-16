@@ -3,7 +3,7 @@
     public partial class MainPage : ContentPage
     {
         public string Name;
-        public bool O = false;
+        public bool O;
         public MainPage()
         {
             InitializeComponent();
@@ -26,7 +26,7 @@
             BigEnter.IsReadOnly = false;
             BigEnter.Text = Preferences.Get(EnterText.Text.ToLower(), "");
             BigEnter.Placeholder = $"Enter Contents of {Name}";
-            if (O)
+            if (!O)
             {
                 Preferences.Set("L", $"{Preferences.Get("L", "")} {EnterText.Text.ToLower()},");
             } 
