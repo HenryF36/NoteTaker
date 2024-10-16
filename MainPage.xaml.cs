@@ -6,6 +6,7 @@
         public MainPage()
         {
             InitializeComponent();
+            
         }
         private void NewNote(object sender, EventArgs e)
         {
@@ -56,6 +57,11 @@
             Anounce.Text = "Viewing all notes";
             BigEnter.Text = Preferences.Get("L","None");
             
+        }
+        private void DelN(object sender, EventArgs e)
+        {
+            Preferences.Clear();
+            Anounce.Text = "Cleared all notes";
         }
     }
 
