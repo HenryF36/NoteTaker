@@ -1,3 +1,9 @@
 <resources>
-    <string name="app_name">NoteTaker</string>
+    <string name="app_name" translatable="false">NoteTaker</string>
+    <string name="welcomeNT">Welcome to NoteTaker</string>
+    <string name="Nnote">New Note</string>
+    <string name="Onote">Open a Note</string>
+    <string name="ViewAll">View all Notes</string>
+    <string name="DelNote">Delete notes</string>
+    <string name="DelAllNotes">Clear Storage</string>
 </resources>
