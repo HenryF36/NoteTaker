@@ -6,4 +6,7 @@
     <string name="ViewAll">View all Notes</string>
     <string name="DelNote">Delete notes</string>
     <string name="DelAllNotes">Clear Storage</string>
+
+    <string name="EnterNnoteN">Enter the name of the new note</string>
+    <string name="NoteName">Note Name</string>
 </resources>

@@ -6,4 +6,5 @@
     <string name="ViewAll">Afficher toutes les notes</string>
     <string name="DelNote">Supprimer des notes</string>
     <string name="DelAllNotes">Effacer le stockage</string>
+    <string name="EnterNnoteN">Entrez le nom de la nouvelle note</string>
 </resources>
