@@ -31,17 +31,21 @@ class MainActivity : ComponentActivity() {
             dialog.setCancelable(true)
 
             // Customize dialog elements
-            //val closeButton = dialog.findViewById<Button>(R.id.CloseB)
+            val closeButton = dialog.findViewById<Button>(R.id.canc)
+            val SaveButton = dialog.findViewById<Button>(R.id.SaveB)
             val NoteNameIm = dialog.findViewById<EditText>(R.id.NnoteName)
+            val NoteCON = dialog.findViewById<EditText>(R.id.NnoteCON)
 
-            //closeButton.setOnClickListener {
+            closeButton.setOnClickListener {
                 // Close Button
+                dialog.dismiss()
+                Log.d("NoteTakerL","NewNote Finished, content discarded.")
 
-            //}
+            }
 
             // Show the dialog
             dialog.show()
-            Log.d("NoteTakerL","NewNoteAct started.")
+            Log.d("NoteTakerL","NewNote started.")
         }
 
         val viewAllNotesButton: Button = findViewById(R.id.ViewAllN)
