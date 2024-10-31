@@ -1,22 +1,34 @@
 package com.hfcode.notetaker
 
 import android.os.Bundle
+import android.util.Log
+import android.widget.Button
 import androidx.activity.ComponentActivity
-import androidx.activity.compose.setContent
-import androidx.activity.enableEdgeToEdge
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.padding
-import androidx.compose.material3.Scaffold
-import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
-import com.hfcode.notetaker.ui.theme.NoteTakerTheme
+import com.hfcode.notetaker.R
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
         setContentView(R.layout.mainactivity)
+
+        val openNoteButton: Button = findViewById(R.id.OpenNoteB)
+        openNoteButton.setOnClickListener {
+            Log.d("NoteTakerL", "Open Note Start")
+        }
+
+        val newNoteButton: Button = findViewById(R.id.NewNoteB)
+        newNoteButton.setOnClickListener {
+            Log.d("NoteTakerL", "New Note Start")
+        }
+
+        val viewAllNotesButton: Button = findViewById(R.id.ViewAllN)
+        viewAllNotesButton.setOnClickListener {
+            Log.d("NoteTakerL", "View All Notes Start")
+        }
+
+        val delNoteButton: Button = findViewById(R.id.DelNoteB)
+        delNoteButton.setOnClickListener {
+            Log.d("NoteTakerL", "Delete Note Start")
+        }
     }
 }
