@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/linearLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -17,5 +18,149 @@
         android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@string/welcomeNT" />
+
+    <Button
+        android:id="@+id/NewNoteB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="156dp"
+        android:autoSizeTextType="uniform"
+        android:minWidth="100dp"
+        android:text="@string/Nnote"
+        app:layout_constraintEnd_toStartOf="@+id/ViewAllN"
+        app:layout_constraintHorizontal_bias="0.109"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Welcome"
+        tools:text="@string/Nnote" />
+
+    <Button
+        android:id="@+id/ViewAllN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="156dp"
+        android:autoSizeTextType="uniform"
+        android:minWidth="100dp"
+        android:text="@string/ViewAll"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.816"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Welcome"
+        tools:text="@string/ViewAll" />
+
+    <Button
+        android:id="@+id/OpenNoteB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="5dp"
+        android:autoSizeTextType="uniform"
+        android:minWidth="100dp"
+        android:text="@string/Onote"
+        app:layout_constraintEnd_toStartOf="@+id/DelNoteB"
+        app:layout_constraintHorizontal_bias="0.053"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/NewNoteB"
+        tools:text="@string/Onote" />
+
+    <Button
+        android:id="@+id/DelNoteB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="25dp"
+        android:autoSizeTextType="uniform"
+        android:minWidth="100dp"
+        android:text="@string/DelNote"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.84"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ViewAllN"
+        tools:text="@string/DelNote" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+    <!--<?xml version="1.0" encoding="utf-8"?>
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/Welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="30dp"
+            android:text="@string/welcomeNT"
+            tools:text="@string/welcomeNT"
+            android:textSize="34sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/DelNoteB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="29dp"
+            android:layout_marginEnd="32dp"
+            android:text="@string/DelNote"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/OpenNoteB"
+            app:layout_constraintTop_toBottomOf="@+id/ViewAllN"
+            tools:text="@string/DelNote" />
+
+        <Button
+            android:id="@+id/ViewAllN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="92dp"
+            android:layout_marginEnd="32dp"
+            android:text="@string/ViewAll"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/NewNoteB"
+            app:layout_constraintTop_toBottomOf="@+id/Welcome"
+            tools:text="@string/ViewAll" />
+
+        <Button
+            android:id="@+id/OpenNoteB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="29dp"
+            android:layout_marginEnd="20dp"
+            android:text="@string/Onote"
+            app:layout_constraintEnd_toStartOf="@+id/DelNoteB"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/NewNoteB"
+            tools:text="@string/Onote" />
+
+        <Button
+            android:id="@+id/NewNoteB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="92dp"
+            android:layout_marginEnd="20dp"
+            android:text="@string/Nnote"
+            app:layout_constraintEnd_toStartOf="@+id/ViewAllN"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Welcome"
+            tools:text="@string/Nnote" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>-->
