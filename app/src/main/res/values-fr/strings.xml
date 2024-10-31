@@ -7,4 +7,8 @@
     <string name="DelNote">Supprimer des notes</string>
     <string name="DelAllNotes">Effacer le stockage</string>
     <string name="EnterNnoteN">Entrez le nom de la nouvelle note</string>
+    <string name="NoteName">Nom de la note</string>
+    <string name="NnoteCON">Entrez le contenu de la note</string>
+    <string name="Cancel">Annuler</string>
+    <string name="Save">Sauvegarder</string>
 </resources>

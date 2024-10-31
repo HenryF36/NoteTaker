@@ -32,7 +32,7 @@ class MainActivity : ComponentActivity() {
 
             // Customize dialog elements
             //val closeButton = dialog.findViewById<Button>(R.id.CloseB)
-            //val NoteNameIm = dialog.findViewById<EditText>(R.id.EnterPassword)
+            val NoteNameIm = dialog.findViewById<EditText>(R.id.NnoteName)
 
             //closeButton.setOnClickListener {
                 // Close Button

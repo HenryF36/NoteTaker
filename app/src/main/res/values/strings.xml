@@ -9,4 +9,7 @@
 
     <string name="EnterNnoteN">Enter the name of the new note</string>
     <string name="NoteName">Note Name</string>
+    <string name="NnoteCON">Enter Contents of the note</string>
+    <string name="Cancel">Cancel</string>
+    <string name="Save">Save</string>
 </resources>

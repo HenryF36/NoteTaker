@@ -7,4 +7,8 @@
     <string name="DelNote">노트 삭제</string>
     <string name="DelAllNotes">저장소 비우기</string>
     <string name="EnterNnoteN">새로운 메모의 이름을 입력하세요</string>
+    <string name="NoteName">노트 이름</string>
+    <string name="NnoteCON">메모의 내용을 입력하세요</string>
+    <string name="Cancel">취소</string>
+    <string name="Save">구하다</string>
 </resources>
