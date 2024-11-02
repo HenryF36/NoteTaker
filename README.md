@@ -1,0 +1,1 @@
+This project is called NoteTaker it allows you to write notes to your self. It is a better version based off of my NoteTaker writen in .NET MAUI. You can delete the note, and if you forget the key it will tell you the list of keys, too.
