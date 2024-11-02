@@ -39,7 +39,7 @@ class MainActivity : ComponentActivity() {
 
                     val sharedPreferences = getSharedPreferences("Notes", MODE_PRIVATE)
                     val savedContent = sharedPreferences.getString(
-                        editText.text.toString().lowercase(Locale.ROOT), ""
+                        editText.text.toString().trim().lowercase(Locale.ROOT), ""  // Trim the input
                     ) ?: ""
                     noteContentEditText.setText(savedContent)  // Set text to EditText
                     noteContentEditText.isVisible = true
@@ -59,7 +59,7 @@ class MainActivity : ComponentActivity() {
                 Log.d("NoteTakerL", "Save Clicked.")
 
                 // Retrieve latest user input
-                val noteName = editText.text.toString().lowercase(Locale.ROOT)
+                val noteName = editText.text.toString().trim().lowercase(Locale.ROOT)  // Trim the input
                 val noteContent = noteContentEditText.text.toString()
 
                 // Saving logic
@@ -94,25 +94,51 @@ class MainActivity : ComponentActivity() {
 
             dialog.show()
             Log.d("NoteTakerL", "NewNote started.")
-
-
-            dialog.show()
-            Log.d("NoteTakerL", "NewNote started.")
-
-
-            dialog.show()
-            Log.d("NoteTakerL", "NewNote started.")
         }
 
-        val viewAllNotesButton: Button = findViewById(R.id.ViewAllN)
-        viewAllNotesButton.setOnClickListener {
-            // TODO: Add logic to view all notes
+
+        val viewAllNoteNButton: Button = findViewById(R.id.ViewAllN)
+        viewAllNoteNButton.setOnClickListener {
+            Log.d("NoteTakerL", "View all Note Names Start")
+
+            // Initialize dialog
+            val dialog = Dialog(this)
+            dialog.setContentView(R.layout.activity_view_all_note_names)
+            dialog.setCancelable(true)
+
+            // Customize dialog elements
+            val closeButton = dialog.findViewById<Button>(R.id.VANcanc)
+            closeButton.setOnClickListener {
+                dialog.dismiss()
+                Log.d("NoteTakerL", "VAN Finished.")
+            }
+
+            dialog.findViewById<Button>(R.id.DelNoteN).setOnClickListener {
+                val sharedPreferences = getSharedPreferences("Notes", MODE_PRIVATE)
+                val editor = sharedPreferences.edit()
+
+                try {
+                    // Remove the NoteList entry
+                    editor.remove("NoteList")
+                    editor.apply()  // Apply changes to SharedPreferences
+
+                    Log.d("NoteTakerL", "NoteList deleted successfully.")
+                } catch (e: Exception) {
+                    Log.e("NoteTakerL", "Error while deleting NoteList:", e)
+                }
+            }
+
+            dialog.show() // Show the dialog
+            Log.d("NoteTakerL","Dialog Shown.")
+
         }
+
 
         val delNoteButton: Button = findViewById(R.id.DelNoteB)
         delNoteButton.setOnClickListener {
             Log.d("NoteTakerL", "Delete Note Start")
             // TODO: Add delete note functionality
         }
+        // TODO : Delete Storage Button with View for Conferm.
     }
 }

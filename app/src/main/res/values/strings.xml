@@ -2,13 +2,19 @@
     <string name="app_name" translatable="false">NoteTaker</string>
     <string name="welcomeNT">Welcome to NoteTaker</string>
     <string name="Onote">Open a Note</string>
-    <string name="ViewAll">View all Notes</string>
-    <string name="DelNote">Delete notes</string>
-    <string name="DelAllNotes">Clear Storage</string>
+    <string name="ViewAll">View all Note Names</string>
+    <string name="DelNote">Delete a note</string>
 
-    <string name="EnterNnoteN">Enter the name of the new note</string>
+    <string name="DelStore">Clear Storage</string>
+
+    <string name="EnterNnoteN">Enter the name of the note</string>
     <string name="NoteName">Note Name</string>
     <string name="NnoteCON">Enter Contents of the note</string>
     <string name="Cancel">Cancel</string>
     <string name="Save">Save</string>
+
+    <string name="AllNoteNames">All Note Names</string>
+    <string name="Error">Error, note names not found.</string>
+    <string name="DelAllNoteNs">Clear Note Names</string>
+    <string name="Close">Close</string>
 </resources>
