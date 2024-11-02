@@ -12,4 +12,7 @@
     <string name="NnoteCON">Enter Contents of the note</string>
     <string name="Cancel">Cancel</string>
     <string name="Save">Save</string>
+
+    <string name="ViewConFOR">Viewing Contents for </string>
+    <string name="Shownote">Show Note</string>
 </resources>

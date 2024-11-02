@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Button
 import android.widget.EditText
+import android.widget.TextView
 import androidx.activity.ComponentActivity
 import com.hfcode.notetaker.R
 
@@ -69,6 +70,24 @@ class MainActivity : ComponentActivity() {
         val viewAllNotesButton: Button = findViewById(R.id.ViewAllN)
         viewAllNotesButton.setOnClickListener {
             Log.d("NoteTakerL", "View All Notes Start")
+            val dialog = Dialog(this)
+            dialog.setContentView(R.layout.activity_view_note)
+            dialog.setCancelable(true)
+
+            // Customize dialog elements
+            val closeButton = dialog.findViewById<Button>(R.id.CloseWin)
+            val ViewButton = dialog.findViewById<Button>(R.id.ShowN)
+
+            // TODO: Add so you can edit now there
+
+            closeButton.setOnClickListener {
+                dialog.dismiss()
+                Log.d("NoteTakerL", "ViewNote Finished.")
+            }
+            ViewButton.setOnClickListener {
+                val ViewButtonS = ViewButton.text.toString()
+                Log.d("NoteTakerL","Showing note $ViewButtonS.")
+            }
         }
 
         val delNoteButton: Button = findViewById(R.id.DelNoteB)
