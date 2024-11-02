@@ -14,12 +14,12 @@
         android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
         android:labelFor="@id/DnoteName"
-        android:text="@string/EnterNnoteN"
+        android:text="@string/EnternameDN"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:text="@string/EnterNnoteN" />
+        tools:text="@string/EnternameDN" />
 
     <EditText
         android:id="@+id/DnoteName"
@@ -38,48 +38,16 @@
         app:layout_constraintTop_toBottomOf="@+id/DNenter"
         tools:ignore="SpeakableTextPresentCheck" />
 
-    <EditText
-        android:id="@+id/NnoteCON"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="66dp"
-        android:layout_marginEnd="20dp"
-        android:width="300dp"
-        android:height="200dp"
-        android:ems="10"
-        android:gravity="start|top"
-        android:hint="@string/NnoteCON"
-        android:inputType="textMultiLine"
-        android:textAlignment="textStart"
-        android:visibility="invisible"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/DnoteName" />
-
     <Button
         android:id="@+id/DNcanc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="24dp"
         android:text="@string/Cancel"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/NnoteCON" />
-
-    <Button
-        android:id="@+id/SaveDN"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginBottom="20dp"
-        android:text="@string/Save"
-        android:visibility="invisible"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/NnoteCON" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/DnoteName" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

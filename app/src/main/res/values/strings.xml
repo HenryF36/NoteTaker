@@ -17,4 +17,6 @@
     <string name="Error">Error, note names not found.</string>
     <string name="DelAllNoteNs">Clear Note Names</string>
     <string name="Close">Close</string>
+
+    <string name="EnternameDN">Enter the name of the note to delete.</string>
 </resources>

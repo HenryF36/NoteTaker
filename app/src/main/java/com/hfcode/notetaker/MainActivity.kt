@@ -27,9 +27,9 @@ class MainActivity : ComponentActivity() {
             dialog.setCancelable(true)
 
             // Customize dialog elements
-            val closeButton = dialog.findViewById<Button>(R.id.canc)
-            val saveButton = dialog.findViewById<Button>(R.id.SaveB)
-            val editText = dialog.findViewById<EditText>(R.id.NnoteName)
+            val closeButton = dialog.findViewById<Button>(R.id.DNcanc)
+            val saveButton = dialog.findViewById<Button>(R.id.SaveDN)
+            val editText = dialog.findViewById<EditText>(R.id.DnoteName)
             val noteContentEditText = dialog.findViewById<EditText>(R.id.NnoteCON)
 
             editText.setOnEditorActionListener { _, actionId, event ->
@@ -148,6 +148,22 @@ class MainActivity : ComponentActivity() {
         delNoteButton.setOnClickListener {
             Log.d("NoteTakerL", "Delete Note Start")
             // TODO: Add delete note functionality
+
+            // Initialize dialog
+            val dialog = Dialog(this)
+            dialog.setContentView(R.layout.activity_del_note)
+            dialog.setCancelable(true)
+            val closeButton = dialog.findViewById<Button>(R.id.DNcanc)
+
+            closeButton.setOnClickListener {
+                dialog.dismiss()
+                Log.d("NoteTakerL", "DN Finished. Note not Deleted")
+            }
+
+
+
+            dialog.show() // Show the dialog
+            Log.d("NoteTakerL", "Dialog Shown.")
         }
         // TODO : Delete Storage Button with View for Conferm.
     }
