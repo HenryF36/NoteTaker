@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="welcomeNT">Bienvenue dans NoteTaker</string>
+    <string name="Onote">Ouvrir une note</string>
+    <string name="ViewAll">Afficher tous les noms de notes</string>
+    <string name="DelNote">Supprimer une note</string>
+
+    <string name="DelStore">Effacer le stockage</string>
+
+    <string name="EnterNnoteN">Entrer le nom de la note</string>
+    <string name="NoteName">Nom de la note</string>
+    <string name="NnoteCON">Entrer le contenu de la note</string>
+    <string name="Cancel">Annuler</string>
+    <string name="Save">Enregistrer</string>
+
+    <string name="AllNoteNames">Tous les noms de notes</string>
+    <string name="Error">Erreur, noms de notes introuvables.</string>
+    <string name="DelAllNoteNs">Effacer les noms de notes</string>
+    <string name="Close">Fermer</string>
+
+    <string name="EnternameDN">Entrez le nom de la note à supprimer.</string>
+    <string name="Del">Supprimer</string>
+</resources>
