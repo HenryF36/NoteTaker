@@ -7,6 +7,7 @@ import android.view.KeyEvent
 import android.view.inputmethod.EditorInfo
 import android.widget.Button
 import android.widget.EditText
+import android.widget.TextView
 import androidx.activity.ComponentActivity
 import androidx.core.view.isVisible
 import java.util.Locale
@@ -108,6 +109,8 @@ class MainActivity : ComponentActivity() {
 
             // Customize dialog elements
             val closeButton = dialog.findViewById<Button>(R.id.VANcanc)
+            val noteNbox = dialog.findViewById<TextView>(R.id.ListB)  // Make sure this is a TextView in your layout
+
             closeButton.setOnClickListener {
                 dialog.dismiss()
                 Log.d("NoteTakerL", "VAN Finished.")
@@ -123,14 +126,21 @@ class MainActivity : ComponentActivity() {
                     editor.apply()  // Apply changes to SharedPreferences
 
                     Log.d("NoteTakerL", "NoteList deleted successfully.")
+                    noteNbox.text = ""  // Clear the TextView after deletion
                 } catch (e: Exception) {
                     Log.e("NoteTakerL", "Error while deleting NoteList:", e)
                 }
             }
 
-            dialog.show() // Show the dialog
-            Log.d("NoteTakerL","Dialog Shown.")
+            // Retrieve existing notes and display them in NoteNbox
+            val sharedPreferences = getSharedPreferences("Notes", MODE_PRIVATE)
+            val existingNotes = sharedPreferences.getStringSet("NoteList", emptySet()) ?: emptySet()
+            val notesList = existingNotes.joinToString(", ") // Convert the set to a comma-separated string
 
+            noteNbox.text = notesList  // Set the text to the TextView
+
+            dialog.show() // Show the dialog
+            Log.d("NoteTakerL", "Dialog Shown.")
         }
 
 

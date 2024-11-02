@@ -36,20 +36,20 @@
         android:id="@+id/DelNoteN"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
         android:layout_marginEnd="24dp"
-        android:layout_marginBottom="24dp"
         android:text="@string/DelAllNoteNs"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ListB" />
 
     <Button
         android:id="@+id/VANcanc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
-        android:layout_marginBottom="24dp"
+        android:layout_marginTop="100dp"
         android:text="@string/Close"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ListB"
         tools:text="@string/Close" />
 </androidx.constraintlayout.widget.ConstraintLayout>
