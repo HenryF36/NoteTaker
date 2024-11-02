@@ -67,17 +67,38 @@ class MainActivity : ComponentActivity() {
                 val editor = sharedPreferences.edit()
 
                 try {
-                    val existingNotes = sharedPreferences.getString("NoteList", " ") ?: " "
-                    editor.putString("NoteList", "$existingNotes$noteName,")
+                    // Check if "NoteList" exists as a String and clear it if necessary
+                    if (sharedPreferences.contains("NoteList") && sharedPreferences.all["NoteList"] is String) {
+                        editor.remove("NoteList").apply()  // Clear the old String type entry
+                    }
+
+                    // Retrieve existing notes as a mutable set, or create a new set if null
+                    val existingNotes = sharedPreferences.getStringSet("NoteList", mutableSetOf())?.toMutableSet() ?: mutableSetOf()
+
+                    // Add new note name to the set and save it back
+                    existingNotes.add(noteName)
+                    editor.putStringSet("NoteList", existingNotes)
+
+                    // Save the note content separately
                     editor.putString(noteName, noteContent)
                     editor.apply()
+
                     Log.d("NoteTakerL", "Note saved successfully as $noteName.")
+                    Log.d("NoteTakerL", "Updated NoteList: ${existingNotes.joinToString(", ")}")
                 } catch (e: Exception) {
                     Log.e("NoteTakerL", "Error while saving note:", e)
                 }
 
                 dialog.dismiss()
             }
+
+            dialog.show()
+            Log.d("NoteTakerL", "NewNote started.")
+
+
+            dialog.show()
+            Log.d("NoteTakerL", "NewNote started.")
+
 
             dialog.show()
             Log.d("NoteTakerL", "NewNote started.")
