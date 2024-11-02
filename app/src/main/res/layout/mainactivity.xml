@@ -30,12 +30,12 @@
         android:layout_marginEnd="25dp"
         android:autoSizeTextType="uniform"
         android:minWidth="100dp"
-        android:text="@string/Nnote"
+        android:text="@string/Onote"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Welcome"
-        tools:text="@string/Nnote" />
+        tools:text="@string/Onote" />
 
     <Button
         android:id="@+id/ViewAllN"

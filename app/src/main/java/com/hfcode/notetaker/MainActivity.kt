@@ -1,7 +1,6 @@
 package com.hfcode.notetaker
 
 import android.app.Dialog
-import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.KeyEvent
@@ -23,7 +22,7 @@ class MainActivity : ComponentActivity() {
 
             // Initialize dialog
             val dialog = Dialog(this)
-            dialog.setContentView(R.layout.activity_new_note)
+            dialog.setContentView(R.layout.activity_open_note)
             dialog.setCancelable(true)
 
             // Customize dialog elements

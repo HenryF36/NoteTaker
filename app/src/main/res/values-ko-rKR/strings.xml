@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="welcomeNT">NoteTaker에 오신 것을 환영합니다</string>
-    <string name="Nnote">새 노트</string>
     <string name="Onote">노트 열기</string>
     <string name="ViewAll">모든 노트 보기</string>
     <string name="DelNote">노트 삭제</string>
