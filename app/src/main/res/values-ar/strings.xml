@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name" translatable="false">NoteTaker</string>
     <string name="welcomeNT">مرحبًا بك في NoteTaker</string>
     <string name="Onote">فتح ملاحظة</string>
     <string name="ViewAll">عرض جميع أسماء الملاحظات</string>
