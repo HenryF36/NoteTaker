@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="welcomeNT">Bienvenue dans NoteTaker</string>
-    <string name="Nnote">Nouvelle note</string>
     <string name="Onote">Ouvrir une note</string>
     <string name="ViewAll">Afficher toutes les notes</string>
     <string name="DelNote">Supprimer des notes</string>
