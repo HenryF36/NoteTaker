@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">NoteTaker</string>
+    <string name="welcomeNT">مرحبًا بك في NoteTaker</string>
+    <string name="Onote">فتح ملاحظة</string>
+    <string name="ViewAll">عرض جميع أسماء الملاحظات</string>
+    <string name="DelNote">حذف ملاحظة</string>
+
+    <string name="DelStore">مسح التخزين</string>
+
+    <string name="EnterNnoteN">أدخل اسم الملاحظة</string>
+    <string name="NoteName">اسم الملاحظة</string>
+    <string name="NnoteCON">أدخل محتويات الملاحظة</string>
+    <string name="Cancel">إلغاء</string>
+    <string name="Save">حفظ</string>
+
+    <string name="AllNoteNames">جميع أسماء الملاحظات</string>
+    <string name="Error">خطأ، لم يتم العثور على أسماء الملاحظات.</string>
+    <string name="DelAllNoteNs">مسح أسماء الملاحظات</string>
+    <string name="Close">إغلاق</string>
+
+    <string name="EnternameDN">أدخل اسم الملاحظة التي تريد حذفها.</string>
+    <string name="Del">حذف</string>
+</resources>
