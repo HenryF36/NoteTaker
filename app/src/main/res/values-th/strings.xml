@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="welcomeNT">ยินดีต้อนรับสู่ NoteTaker</string>
+    <string name="Onote">เปิดบันทึก</string>
+    <string name="ViewAll">ดูชื่อบันทึกทั้งหมด</string>
+    <string name="DelNote">ลบบันทึก</string>
+
+    <string name="DelStore">ล้างพื้นที่เก็บข้อมูล</string>
+
+    <string name="EnterNnoteN">ป้อนชื่อของบันทึก</string>
+    <string name="NoteName">ชื่อบันทึก</string>
+    <string name="NnoteCON">ป้อนเนื้อหาของบันทึก</string>
+    <string name="Cancel">ยกเลิก</string>
+    <string name="Save">บันทึก</string>
+
+    <string name="AllNoteNames">ชื่อบันทึกทั้งหมด</string>
+    <string name="Error">ข้อผิดพลาด ไม่พบชื่อบันทึก</string>
+    <string name="DelAllNoteNs">ล้างชื่อบันทึก</string>
+    <string name="Close">ปิด</string>
+
+    <string name="EnternameDN">ป้อน ชื่อของบันทึกที่ต้องการลบ</string>
+    <string name="Del">ลบ</string>
+</resources>
