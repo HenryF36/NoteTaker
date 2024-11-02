@@ -19,4 +19,5 @@
     <string name="Close">Close</string>
 
     <string name="EnternameDN">Enter the name of the note to delete.</string>
+    <string name="Del">Delete</string>
 </resources>
