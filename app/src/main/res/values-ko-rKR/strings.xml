@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="welcomeNT">NoteTaker에 오신 것을 환영합니다.</string>
+    <string name="Onote">노트 열기</string>
+    <string name="ViewAll">모든 노트 이름 보기</string>
+    <string name="DelNote">노트 삭제</string>
+
+    <string name="DelStore">저장소 비우기</string>
+
+    <string name="EnterNnoteN">노트 이름 입력</string>
+    <string name="NoteName">노트 이름</string>
+    <string name="NnoteCON">노트 내용 입력</string>
+    <string name="Cancel">취소</string>
+    <string name="Save">저장</string>
+
+    <string name="AllNoteNames">모든 노트 이름</string>
+    <string name="Error">오류, 노트 이름을 찾을 수 없습니다.</string>
+    <string name="DelAllNoteNs">노트 이름 지우기</string>
+    <string name="Close">닫기</string>
+
+    <string name="EnternameDN">노트 이름 입력 삭제할 메모.</string>
+    <string name="Del">삭제</string>
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="welcomeNT">NoteTaker へようこそ</string>
+    <string name="Onote">メモを開く</string>
+    <string name="ViewAll">すべてのメモ名を表示</string>
+    <string name="DelNote">メモを削除する</string>
+
+    <string name="DelStore">ストレージをクリア</string>
+
+    <string name="EnterNnoteN">メモの名前を入力してください</string>
+    <string name="NoteName">メモ名</string>
+    <string name="NnoteCON">メモの内容を入力</string>
+    <string name="Cancel">キャンセル</string>
+    <string name="Save">保存</string>
+
+    <string name="AllNoteNames">すべてのメモ名</string>
+    <string name="Error">エラー、メモ名が見つかりません。</string>
+    <string name="DelAllNoteNs">メモ名をクリア</string>
+    <string name="Close">閉じる</string>
+
+    <string name="EnternameDN">メモの名前を入力してください削除します。</string>
+    <string name="Del">削除</string>
+</resources>

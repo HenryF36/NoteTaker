@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="welcomeNT">欢迎使用 NoteTaker</string>
+    <string name="Onote">打开笔记</string>
+    <string name="ViewAll">查看所有笔记名称</string>
+    <string name="DelNote">删除笔记</string>
+
+    <string name="DelStore">清除存储</string>
+
+    <string name="EnterNnoteN">输入笔记名称</string>
+    <string name="NoteName">笔记名称</string>
+    <string name="NnoteCON">输入笔记内容</string>
+    <string name="Cancel">取消</string>
+    <string name="Save">保存</string>
+
+    <string name="AllNoteNames">所有笔记名称</string>
+    <string name="Error">错误，未找到笔记名称。</string>
+    <string name="DelAllNoteNs">清除笔记名称</string>
+    <string name="Close">关闭</string>
+
+    <string name="EnternameDN">输入笔记名称删除。</string>
+    <string name="Del">删除</string>
+</resources>

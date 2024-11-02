@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="welcomeNT">Velkommen til NoteTaker</string>
+    <string name="Onote">Åpne et notat</string>
+    <string name="ViewAll">Se alle notatnavn</string>
+    <string name="DelNote">Slett et notat</string>
+
+    <string name="DelStore">Tøm lagring</string>
+
+    <string name="EnterNnoteN">Skriv inn navnet på notatet</string>
+    <string name="NoteName">Notenavn</string>
+    <string name="NnoteCON">Skriv inn innholdet i notatet</string>
+    <string name="Cancel">Avbryt</string>
+    <string name="Save">Lagre</string>
+
+    <string name="AllNoteNames">Alle notatnavn</string>
+    <string name="Error">Feil, notatnavn ble ikke funnet.</string>
+    <string name="DelAllNoteNs">Slett notatnavn</string>
+    <string name="Close">Lukk</string>
+
+    <string name="EnternameDN">Skriv inn navnet på notatet som skal slettes.</string>
+    <string name="Del">Slett</string>
+</resources>
