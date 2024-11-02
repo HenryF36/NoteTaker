@@ -23,30 +23,48 @@ class MainActivity : ComponentActivity() {
         val newNoteButton: Button = findViewById(R.id.NewNoteB)
         newNoteButton.setOnClickListener {
             Log.d("NoteTakerL", "New Note Start")
+
             // Initialize dialog
             val dialog = Dialog(this)
             dialog.setContentView(R.layout.activity_new_note)
-
-            // Set dialog properties
             dialog.setCancelable(true)
 
             // Customize dialog elements
             val closeButton = dialog.findViewById<Button>(R.id.canc)
-            val SaveButton = dialog.findViewById<Button>(R.id.SaveB)
-            val NoteNameIm = dialog.findViewById<EditText>(R.id.NnoteName)
-            val NoteCON = dialog.findViewById<EditText>(R.id.NnoteCON)
+            val saveButton = dialog.findViewById<Button>(R.id.SaveB)
 
             closeButton.setOnClickListener {
-                // Close Button
                 dialog.dismiss()
-                Log.d("NoteTakerL","NewNote Finished, content discarded.")
-
+                Log.d("NoteTakerL", "NewNote Finished, content discarded.")
             }
 
-            // Show the dialog
+            saveButton.setOnClickListener {
+                Log.d("NoteTakerL", "Save Clicked.")
+
+                // Retrieve latest user input
+                val noteName = dialog.findViewById<EditText>(R.id.NnoteName).text.toString()
+                val noteContent = dialog.findViewById<EditText>(R.id.NnoteCON).text.toString()
+
+                // Saving logic
+                val sharedPreferences = getSharedPreferences("Notes", MODE_PRIVATE)
+                val editor = sharedPreferences.edit()
+
+                try {
+                    editor.putString("NoteList", "${sharedPreferences.getString("NoteList", " ")} ${noteName},")
+                    editor.putString(noteName, noteContent)  // Save Note Content
+                    editor.apply()  // Commit changes only once
+                    Log.d("NoteTakerL", "Note saved successfully as $noteName.")
+                } catch (e: Exception) {
+                    Log.e("NoteTakerL", "Error while saving note:", e)
+                }
+
+                dialog.dismiss()
+            }
+
             dialog.show()
-            Log.d("NoteTakerL","NewNote started.")
+            Log.d("NoteTakerL", "NewNote started.")
         }
+
 
         val viewAllNotesButton: Button = findViewById(R.id.ViewAllN)
         viewAllNotesButton.setOnClickListener {
